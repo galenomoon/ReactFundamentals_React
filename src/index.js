@@ -1,3 +1,4 @@
+import './index.css' //Importing CSS
 import ReactDOM from "react-dom"; //Importing ReactDom | Document Object Model
 import React from "react"; //Syntax JSX
 
