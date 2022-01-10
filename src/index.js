@@ -1,7 +1,8 @@
-import './index.css' //Importing CSS
+import "./index.css"; //Importing CSS
 import ReactDOM from "react-dom"; //Importing ReactDom | Document Object Model
 import React from "react"; //Syntax JSX
-import First from './components/basics/First'; //Exporting JS elements
+import First from "./components/basics/First"; //Exporting JS elements
+import WithParams from "./components/basics/WithParams";
 //If First was called "Dagoberto", would still work (only if the <First> tag is renamed)
 
 // #Examples Fundamentals of React ⤵
@@ -22,6 +23,12 @@ const tag = <h1>Let's go</h1>;
 ReactDOM.render(<div>{tag}</div>, document.getElementById("root3"));
 */
 
-ReactDOM.render(<div>
-    <First></First> 
-    </div>, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <First></First>
+    <WithParams 
+    title="I'm a title" 
+    subtitle="I'm a subtitle"/>
+  </div>,
+  document.getElementById("root")
+);
