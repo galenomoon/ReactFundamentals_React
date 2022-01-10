@@ -1,18 +1,20 @@
 import React from "react";
 
 export default (props) => {
-    
   const [min, max] = [props.minimalValue, props.maxValue];
   const numberRandom = Math.floor(Math.random(min) * max);
 
   return (
     <>
-      <p>Minimal Value: {min}</p>
-      <p>Max Value: {max}</p>
+      <p>
+        <b>Minimal Value:</b> {min}
+      </p>
+      <p>
+        <b>Max Value:</b> {max}
+      </p>
       <h2>
-        the Value Drawn was <b>{numberRandom}</b>
+        <b> the Value Drawn was </b>{numberRandom}
       </h2>
-      <hr></hr>
     </>
   );
 };

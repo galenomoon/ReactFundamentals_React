@@ -1,0 +1,26 @@
+
+.card {
+  background-color: Red;
+  border: 2px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: 8px 8px 10px black; */
+  transition:0.4s;
+}
+
+.card:hover {
+    transition:0.4s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgb(255, 0, 0)
+  }
+.card .title {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.card .content {
+  background-color: #ffff;
+  color: #000;
+  padding: 10px;
+}

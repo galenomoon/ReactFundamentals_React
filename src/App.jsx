@@ -3,16 +3,22 @@ import First from "./components/basics/First"; //Exporting JS elements, if First
 import WithParams from "./components/basics/WithParams";
 import Fragment from "./components/basics/Fragment";
 import Random from "./components/basics/Random";
+import Card from "./components/Layout/Card";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
   // Or you can use "<React.Fragment><React.Fragment/>""
   <div id="app">
+    
     <h1>React Fundamentals</h1>
+
+<Card title="Random Number Challenge">
     <Random
     minimalValue={0}
     maxValue={60}
     />
+</Card>
+
     <Fragment />
     {/*Here ⤵ I'm generating two props with their respective values, and in WithParams.jsx calling it for interpolation*/}
     <WithParams

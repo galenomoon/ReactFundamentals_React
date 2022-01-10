@@ -14,7 +14,6 @@ export default function WithParams(props) {
           {props.studentScore} and was {status}!
         </b>
       </p>
-      <hr></hr>
     </div>
   );
 }
