@@ -24,11 +24,14 @@ ReactDOM.render(<div>{tag}</div>, document.getElementById("root3"));
 */
 
 ReactDOM.render(
+  // Here ⤵ I'm generating two props with their respective values, and in WithParams.jsx calling it for interpolation
   <div>
     <First></First>
-    <WithParams 
-    title="I'm a title" 
-    subtitle="I'm a subtitle"/>
+    <WithParams title="Student's Situation" studentName="Peter" studentScore={9.3} />
+ 
+    <WithParams title="Student's Situation" studentName="Michele" studentScore={9.7} />
+
+    <WithParams title="Student's Situation" studentName="Flash" studentScore={6.1} />
   </div>,
   document.getElementById("root")
 );
