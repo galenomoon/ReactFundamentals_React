@@ -10,6 +10,7 @@ import Family from "./components/basics/Family";
 import StudentList from "./components/Repetition/StudentList";
 import TableProducts from "./components/Repetition/TableProducts";
 import OddsOrEvens from "./components/conditional/OddsOrEvens";
+import UserInfo from "./components/conditional/UserInfo";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
@@ -18,6 +19,8 @@ export default () => (
     <h1>React Fundamentals</h1>
     <Card title="#08 - Conditional Rendering - Odds or Evens" color="#982395">
       <OddsOrEvens number={21}></OddsOrEvens>
+      <UserInfo user={{name: 'Fernando'}}></UserInfo>
+      <UserInfo user={{}}></UserInfo>
     </Card>
 
     <Card title="#07 - Repetition - Products" color="#3A9AD9">
