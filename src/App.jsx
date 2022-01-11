@@ -13,11 +13,11 @@ export default () => (
     <h1>React Fundamentals</h1>
 
     <div className="cards">
-      <Card title="#01 - First Component">
+      <Card title="#01 - First Component" color="#FA6900">
         <First></First>
       </Card>
 
-      <Card title="#02 - With Params">
+      <Card title="#02 - With Params" color="#E94C6F">
         {/*Here ⤵ I'm generating two props with their respective values, and in WithParams.jsx calling it for interpolation*/}
         <WithParams
           title="Student's Situation"
@@ -26,11 +26,11 @@ export default () => (
         />
       </Card>
 
-      <Card title="#03 - Fragment">
+      <Card title="#03 - Fragment" color="#E8B71A">
         <Fragment />
       </Card>
 
-      <Card title="#04 - Random Number Challenge">
+      <Card title="#04 - Random Number Challenge" color="#588C73">
         <Random minimalValue={0} maxValue={60} />
       </Card>
     </div>
