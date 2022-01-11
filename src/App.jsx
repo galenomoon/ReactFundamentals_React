@@ -5,6 +5,7 @@ import Fragment from "./components/basics/Fragment";
 import Random from "./components/basics/Random";
 import Card from "./components/Layout/Card";
 import "./components/App.css";
+import Family from "./components/basics/Family";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
@@ -13,8 +14,16 @@ export default () => (
     <h1>React Fundamentals</h1>
 
     <div className="cards">
-      <Card title="#01 - First Component" color="#FA6900">
-        <First></First>
+    <Card title="#05 - Components With Children" color="#00C8F8">
+        <Family lastName="Parker"/>
+      </Card>
+      
+      <Card title="#04 - Random Number Challenge" color="#588C73">
+        <Random minimalValue={0} maxValue={60} />
+      </Card>
+
+      <Card title="#03 - Fragment" color="#E8B71A">
+        <Fragment />
       </Card>
 
       <Card title="#02 - With Params" color="#E94C6F">
@@ -26,12 +35,8 @@ export default () => (
         />
       </Card>
 
-      <Card title="#03 - Fragment" color="#E8B71A">
-        <Fragment />
-      </Card>
-
-      <Card title="#04 - Random Number Challenge" color="#588C73">
-        <Random minimalValue={0} maxValue={60} />
+      <Card title="#01 - First Component" color="#FA6900">
+        <First></First>
       </Card>
     </div>
   </div>
