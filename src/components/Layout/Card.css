@@ -6,6 +6,7 @@
   overflow: hidden;
   /* box-shadow: 8px 8px 10px black; */
   transition:0.4s;
+  margin: 20px
 }
 
 .card:hover {
