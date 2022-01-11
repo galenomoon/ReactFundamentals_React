@@ -20,7 +20,7 @@ export default () => (
     <Card title="#08 - Conditional Rendering - Odds or Evens" color="#982395">
       <OddsOrEvens number={21}></OddsOrEvens>
       <UserInfo user={{name: 'Fernando'}}></UserInfo>
-      <UserInfo user={{}}></UserInfo>
+      <UserInfo user={{null: 'null'}}></UserInfo>
     </Card>
 
     <Card title="#07 - Repetition - Products" color="#3A9AD9">
