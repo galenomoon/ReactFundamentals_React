@@ -9,21 +9,25 @@ import MemberFamily from "./components/basics/MemberFamily";
 import Family from "./components/basics/Family";
 import StudentList from "./components/Repetition/StudentList";
 import TableProducts from "./components/Repetition/TableProducts";
+import OddsOrEvens from "./components/conditional/OddsOrEvens";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
   // Or you can use "<React.Fragment><React.Fragment/>""
   <div className="App">
-
     <h1>React Fundamentals</h1>
+    <Card title="#08 - Conditional Rendering - Odds or Evens" color="#982395">
+      <OddsOrEvens number={21}></OddsOrEvens>
+    </Card>
+
     <Card title="#07 - Repetition - Products" color="#3A9AD9">
-        <TableProducts></TableProducts>
-      </Card>
+      <TableProducts></TableProducts>
+    </Card>
 
     <Card title="#06 - Repetition - Students" color="#FF4C65">
       <h2>Student List</h2>
-        <StudentList></StudentList>
-      </Card>
+      <StudentList></StudentList>
+    </Card>
 
     <div className="cards">
       <Card title="#05 - Components With Children" color="#00C8F8">

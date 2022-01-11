@@ -9,7 +9,7 @@ export default (props) => {
     return products.map((product, i) => {
       return (
         // OMG, a Conditional ClassName! ⤵
-        <tr key={product.id} className={i % 2 == 0 ? "pair" : "odd"}>
+        <tr key={product.id} className={i % 2 === 0 ? "pair" : "odd"}>
           <td>{product.id}</td>
           <td>{product.name}</td>
           <td>R$ {product.price.toFixed(2).replace(".", ",")}</td>
