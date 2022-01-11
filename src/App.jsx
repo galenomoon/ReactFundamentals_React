@@ -11,28 +11,33 @@ import StudentList from "./components/Repetition/StudentList";
 import TableProducts from "./components/Repetition/TableProducts";
 import OddsOrEvens from "./components/conditional/OddsOrEvens";
 import UserInfo from "./components/conditional/UserInfo";
+import DirectParent from "./components/communication/DirectParent";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
   // Or you can use "<React.Fragment><React.Fragment/>""
   <div className="App">
     <h1>React Fundamentals</h1>
-    <Card title="#08 - Conditional Rendering - Odds or Evens" color="#982395">
-      <OddsOrEvens number={21}></OddsOrEvens>
-      <UserInfo user={{name: 'Fernando'}}></UserInfo>
-      <UserInfo user={{null: 'null'}}></UserInfo>
-    </Card>
-
-    <Card title="#07 - Repetition - Products" color="#3A9AD9">
-      <TableProducts></TableProducts>
-    </Card>
-
-    <Card title="#06 - Repetition - Students" color="#FF4C65">
-      <h2>Student List</h2>
-      <StudentList></StudentList>
-    </Card>
 
     <div className="cards">
+      <Card title="#09 - DIrect Communication" color="#59323C">
+        <DirectParent></DirectParent>
+      </Card>
+      <Card title="#08 - Conditional Rendering - Odds or Evens" color="#982395">
+        <OddsOrEvens number={21}></OddsOrEvens>
+        <UserInfo user={{ name: "Fernando" }}></UserInfo>
+        <UserInfo user={{ null: "null" }}></UserInfo>
+      </Card>
+
+      <Card title="#07 - Repetition - Products" color="#3A9AD9">
+        <TableProducts></TableProducts>
+      </Card>
+
+      <Card title="#06 - Repetition - Students" color="#FF4C65">
+        <h2>Student List</h2>
+        <StudentList></StudentList>
+      </Card>
+
       <Card title="#05 - Components With Children" color="#00C8F8">
         <Family lastName="Parker" />
         <MemberFamily name="Peter" />
