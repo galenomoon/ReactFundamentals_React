@@ -1,0 +1,13 @@
+.table-products th {
+  background-color: #293cae;
+  color: #fff
+}
+.table-products table {
+  width: 100%;
+}
+.table-products .pair {
+  background-color: #ddd;
+}
+.table-products .odd {
+  background-color: rgb(243, 243, 243);
+}
