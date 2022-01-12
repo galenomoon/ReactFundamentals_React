@@ -1,0 +1,31 @@
+.Mega button {
+    outline: none;
+    margin: 15px;
+    /* height: 40px; */
+    /* width: 40px; */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1499d3;
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.2s;
+    border: 2px solid;
+    border-color: #ffffff;
+  }
+  
+  .Mega button:hover {
+    border: 2px solid;
+    border-color: #1499d3;
+    color: #1499d3;
+    background-color: white;
+    transition: 0.4s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #1499d3;
+  }
+
+  .Mega input{
+      font-size: 1.3rem;
+  }
+  .Mega label{
+   margin-right: 10px;
+}

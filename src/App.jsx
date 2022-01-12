@@ -15,6 +15,7 @@ import DirectParent from "./components/communication/DirectParent";
 import IndirectParent from "./components/communication/IndirectParent";
 import Input from "./components/form/Input";
 import Counter from "./components/counter/Counter";
+import Mega from "./components/Mega/Mega"
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
@@ -23,9 +24,14 @@ export default () => (
     <h1>React Fundamentals</h1>
     <div className="cards">
 
-    <Card title="#12 - Counter" color="#424242">
+      <Card title="#13 - Mega" color="#B9006e">
+        <Mega qtd={8}></Mega>
+      </Card>
+
+      <Card title="#12 - Counter" color="#424242">
         <Counter initialNumber={10}></Counter>
       </Card>
+
       <Card title="#11 - Controlled Component (Input)" color="#E45F56">
         <Input></Input>
       </Card>
@@ -37,18 +43,22 @@ export default () => (
       <Card title="#09 - Direct Communication" color="#59323C">
         <DirectParent></DirectParent>
       </Card>
+
       <Card title="#08 - Conditional Rendering - Odds or Evens" color="#982395">
         <OddsOrEvens number={21}></OddsOrEvens>
         <UserInfo user={{ name: "Fernando" }}></UserInfo>
         <UserInfo user={{ null: "null" }}></UserInfo>
       </Card>
+
       <Card title="#07 - Repetition - Products" color="#3A9AD9">
         <TableProducts></TableProducts>
       </Card>
+
       <Card title="#06 - Repetition - Students" color="#FF4C65">
         <h2>Student List</h2>
         <StudentList></StudentList>
       </Card>
+
       <Card title="#05 - Components With Children" color="#00C8F8">
         <Family lastName="Parker" />
         <MemberFamily name="Peter" />
@@ -56,12 +66,15 @@ export default () => (
         <MemberFamily name="Barry" />
         <Family />
       </Card>
+
       <Card title="#04 - Random Number Challenge" color="#588C73">
         <Random minimalValue={0} maxValue={60} />
       </Card>
+
       <Card title="#03 - Fragment" color="#E8B71A">
         <Fragment />
       </Card>
+
       <Card title="#02 - With Params" color="#E94C6F">
         {/*Here ⤵ I'm generating two props with their respective values, and in WithParams.jsx calling it for interpolation*/}
         <WithParams
@@ -70,6 +83,7 @@ export default () => (
           studentScore={9.3}
         />
       </Card>
+
       <Card title="#01 - First Component" color="#FA6900">
         <First></First>
       </Card>
