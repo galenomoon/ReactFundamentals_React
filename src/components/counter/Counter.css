@@ -1,0 +1,27 @@
+.Counter input {
+  font-size: 1.4rem;
+  width: 70px;
+}
+.Counter button {
+  outline: none;
+  margin: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 25%;
+  background-color: #1499d3;
+  color: white;
+  font-size: 1.4rem;
+  transition: 0.2s;
+  border: 2px solid;
+  border-color: #ffffff;
+}
+
+.Counter button:hover {
+  border: 2px solid;
+  border-color: #1499d3;
+  color: #1499d3;
+  background-color: white;
+  transition: 0.2s;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #1499d3;
+}

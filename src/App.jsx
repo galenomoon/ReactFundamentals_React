@@ -14,6 +14,7 @@ import UserInfo from "./components/conditional/UserInfo";
 import DirectParent from "./components/communication/DirectParent";
 import IndirectParent from "./components/communication/IndirectParent";
 import Input from "./components/form/Input";
+import Counter from "./components/counter/Counter";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
@@ -22,7 +23,10 @@ export default () => (
     <h1>React Fundamentals</h1>
     <div className="cards">
 
-      <Card title="#11 - Controlled Component" color="#E45F56">
+    <Card title="#12 - Counter" color="#424242">
+        <Counter initialNumber={10}></Counter>
+      </Card>
+      <Card title="#11 - Controlled Component (Input)" color="#E45F56">
         <Input></Input>
       </Card>
 
