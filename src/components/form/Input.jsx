@@ -13,13 +13,15 @@ export default (props) => {
 
   return (
     <div className="Input">
-      <h2>{value ? value : 'Type a text'}</h2>
-      <div style={{
+      <h2>{value ? value : "Type a text"}</h2>
+      <div
+        style={{
           display: "flex",
-          flexDirection: "column"
-      }}>
-          <br></br>
-          <h3>Controlled (onChange)</h3>
+          flexDirection: "column",
+        }}
+      >
+        <br></br>
+        <h3>Controlled (onChange)</h3>
         <input value={value} onChange={whenChange} />
         <h3>Controlled (readOnly)</h3>
         <input value={value} readOnly />

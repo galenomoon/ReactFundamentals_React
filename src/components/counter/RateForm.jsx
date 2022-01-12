@@ -8,7 +8,7 @@ export default (props) => {
         id="rateInput"
         type="number"
         value={props.rate}
-        onChange={e => props.setRate(+e.target.value)}
+        onChange={(e) => props.setRate(+e.target.value)}
       ></input>
     </div>
   );

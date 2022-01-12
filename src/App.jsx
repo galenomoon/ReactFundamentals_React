@@ -15,7 +15,7 @@ import DirectParent from "./components/communication/DirectParent";
 import IndirectParent from "./components/communication/IndirectParent";
 import Input from "./components/form/Input";
 import Counter from "./components/counter/Counter";
-import Mega from "./components/Mega/Mega"
+import Mega from "./components/Mega/Mega";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
@@ -23,7 +23,6 @@ export default () => (
   <div className="App">
     <h1>React Fundamentals</h1>
     <div className="cards">
-
       <Card title="#13 - Mega" color="#B9006e">
         <Mega qtd={8}></Mega>
       </Card>

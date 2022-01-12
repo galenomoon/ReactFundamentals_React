@@ -21,23 +21,31 @@ export default (props) => {
     return numbers;
   }
 
-  const [qtd, setQtd] = useState( props.qtd || 6);
-  const initialNumbers = generateNumbers(qtd)
+  const [qtd, setQtd] = useState(props.qtd || 6);
+  const initialNumbers = generateNumbers(qtd);
   const [numbers, setNumbers] = useState(initialNumbers);
 
   return (
     <div className="Mega">
       <h2>Mega</h2>
-      <h3>{numbers.join(' ')}</h3>
+      <h3>{numbers.join(" ")}</h3>
       <div>
-          <label>
-              <input min="6" max="15" type="number" value={qtd} onChange={_=>{
-                  setQtd(+_.target.value)
-                  setNumbers(generateNumbers(+_.target.value))
-              }}></input>
-          </label>
+        <label>
+          <input
+            min="6"
+            max="15"
+            type="number"
+            value={qtd}
+            onChange={(_) => {
+              setQtd(+_.target.value);
+              setNumbers(generateNumbers(+_.target.value));
+            }}
+          ></input>
+        </label>
       </div>
-      <button onClick={_ => setNumbers(generateNumbers(qtd))}>Good Lucky!</button>
+      <button onClick={(_) => setNumbers(generateNumbers(qtd))}>
+        Good Lucky!
+      </button>
     </div>
   );
 };

@@ -13,7 +13,8 @@ export default (props) => {
         <b>Max Value:</b> {max}
       </p>
       <h2>
-        <b> the Value Drawn was </b>{numberRandom}
+        <b> the Value Drawn was </b>
+        {numberRandom}
       </h2>
     </>
   );

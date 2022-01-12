@@ -13,7 +13,7 @@ class Counter extends Component {
   };
 
   //-- Change State --//
-  inc = _ => {
+  inc = (_) => {
     //-- It ⤵ was obtained by components --//
     this.setState({
       number: this.state.number + this.state.rate,
@@ -21,7 +21,7 @@ class Counter extends Component {
   };
 
   //-- Change State --//
-  dec = _ => {
+  dec = (_) => {
     //-- It ⤵ was obtained by components --//
     this.setState({
       number: this.state.number - this.state.rate,
@@ -38,9 +38,9 @@ class Counter extends Component {
     return (
       <div className="Counter">
         <h2>Counter</h2>
-        <Display number={this.state.number}/>
-        <RateForm rate={this.state.rate} setRate={this.setRate}/>
-        <Buttons setInc={this.inc} setDec={this.dec}/>
+        <Display number={this.state.number} />
+        <RateForm rate={this.state.rate} setRate={this.setRate} />
+        <Buttons setInc={this.inc} setDec={this.dec} />
       </div>
     );
   }

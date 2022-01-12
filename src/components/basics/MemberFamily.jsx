@@ -1,7 +1,9 @@
 import React from "react";
 
-export default props=> {
+export default (props) => {
   return (
-    <div>{props.name} <b>{props.lastName}</b></div>
+    <div>
+      {props.name} <b>{props.lastName}</b>
+    </div>
   );
-}
+};
