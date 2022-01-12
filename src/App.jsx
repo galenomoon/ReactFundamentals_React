@@ -13,14 +13,19 @@ import OddsOrEvens from "./components/conditional/OddsOrEvens";
 import UserInfo from "./components/conditional/UserInfo";
 import DirectParent from "./components/communication/DirectParent";
 import IndirectParent from "./components/communication/IndirectParent";
+import Input from "./components/form/Input";
 
 export default () => (
   // _, (), props, (props) | This function only takes ONE parameter, so we can use UNDERLINE (_) to say that to the code
   // Or you can use "<React.Fragment><React.Fragment/>""
   <div className="App">
     <h1>React Fundamentals</h1>
-
     <div className="cards">
+
+      <Card title="#11 - Controlled Component" color="#E45F56">
+        <Input></Input>
+      </Card>
+
       <Card title="#10 - Indirect Communication" color="#8bad39">
         <IndirectParent></IndirectParent>
       </Card>
